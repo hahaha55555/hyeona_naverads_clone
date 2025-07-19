@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>네이버 로그인</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="loginstyle.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_inner">
+        <h1 class="logo">
+          <a href="index.html" class="sp_Img"
+            ><span class="blind">네이버</span></a
+          >
+        </h1>
+        <select class="lang">
+          <option value="ko">한국어</option>
+          <option value="en">Engilsh</option>
+          <option value="zh-Hans_CN">中文(简体)</option>
+          <option value="zh-Hant_TW">中文(台灣)</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <div class="naver_login inner">
+        <input type="radio" name="tab" id="tab1" checked />
+        <label for="tab1"
+          ><span class="tab_Id sp_Img2">id/전화번호</span></label
+        >
+        <input type="radio" name="tab" id="tab2" />
+        <label for="tab2"
+          ><span class="tab_Num sp_Img2">일회용 번호</span></label
+        >
+        <input type="radio" name="tab" id="tab3" />
+        <label for="tab3"><span class="tab_Qr sp_Img2">QR코드</span></label>
+        <div class="tab_Men u">
+          <section class="content1" id="content1">
+            <label for="user_Id" class="blind">아이디 또는 전화번호 입력</label>
+            <input
+              type="text"
+              id="user_Id"
+              name="user_Id"
+              placeholder="아이디 또는 전화번호"
+              class="user user_Id"
+            />
+            <label for="user_Pw" class="blind">비밀번호 입력</label>
+            <input
+              type="password"
+              id="user_Pw"
+              name="user_Pw"
+              placeholder="비밀번호"
+              class="user user_Pw"
+            />
+            <div class="safe_Box">
+              <input type="checkbox" id="keep_check" class="keep_check" />
+              <label for="keep_check" class="btnCheck sp_Img2"
+                ><span>로그인 상태 유지</span></label
+              >
+            </div>
+            <input type="submit" class="login" id="" value="로그인" />
+            <p class="bar">지문 얼굴 인증을 설정햇다면</p>
+            <input type="submit" class="passkey" id="" value="패스키 로그인" />
+
+            <!--content-->
+          </section>
+          <section class="content2" id="content2">
+            <div class="content2_Text">
+              <p>
+                네이버앱의
+                <span class="font_G sp_Img3 setting">메뉴 > 설정</span>
+                <span class="font_G"
+                  >> 로그인 아이디 관리 ><br />더보기 > 일회용 로그인 번호에
+                  보이는 번호</span
+                >를 입력해 주세요<a href="" class="sp_Img3"
+                  ><span class="blind">도움말</span></a
+                >
+              </p>
+            </div>
+            <label for="" class="blind">번호를 입력하세요</label>
+            <input
+              type="text"
+              id=""
+              name=""
+              class="user_Num user"
+              placeholder="번호를 입력하세요"
+            />
+            <input type="submit" class="login" id="" value="로그인" />
+          </section>
+          <!--//content2-->
+          <section class="content3" id="content3">
+            <div class="qr_Img">
+              <img src="images/다운로드.jpg" alt="QR코드스캔" />
+            </div>
+            <p class="content3_Text">
+              공용 네트워크, 공용 PC라면 안전을 위해<br />QR코드로
+              로그인해주세요.
+            </p>
+            <p class="small_T">
+              <span class="sp_Img3 sp_App"> 네이버앱</span
+              ><span class="sp_Img3 sp_Lens">>렌즈</span>를 눌러 QR코드를
+              스캔하여<br />보이는 숫자중 를 선택하면 로그인 됩니다.
+            </p>
+          </section>
+          <!--//content3-->
+        </div>
+        <!--naver_login-->
+      </div>
+      <ul class="menu inner">
+        <li><a href="">비밀번호 찾기</a></li>
+        <li><a href="">아이디 찾기</a></li>
+        <li><a href="">회원가입</a></li>
+      </ul>
+      <div class="ads_image inner">
+        <a href=""
+          ><img src="images/7c44cee7cebd387646e3_20250418114751624.jpg" alt=""
+        /></a>
+      </div>
+    </main>
+    <footer class="inner">
+      <ul class="footer_menu">
+        <li><a href="">이용약관</a></li>
+        <li>
+          <a href=""><strong>개인정보처리방침</strong></a>
+        </li>
+        <li><a href="">책임의 한계와 법적고지</a></li>
+        <li><a href="">회원정보 고객센터</a></li>
+      </ul>
+
+      <p class="footer_logo"><a href="" class="sp_Img"></a></p>
+      <div class="Copyright">
+        <span>Copyright</span><span class="copy">&copy;Naver Corp.</span
+        ><span>All Rights Reserved.</span>
+      </div>
+    </footer>
+  </body>
+</html>
